@@ -1,11 +1,10 @@
-from flask import Flask, request, jsonify, session, redirect, url_for, render_template
+from flask import Flask, request, session, redirect, url_for, render_template
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # Set a secret key for session management
 
 # Dummy user credentials (replace this with your actual authentication logic)
 valid_credentials = {'username': 'jaloladdin', 'password': 'jalol2007'}
-valid_credentials = {'username': 'user', 'password': 'user1234'}
 
 @app.route('/')
 def index():
